@@ -1,0 +1,47 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: clamp(1rem, 1rem + .5vw, 22px);
+    line-height: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+button, a, p {
+    background: black;
+    color: white;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 2rem auto;
+    display: block;
+    box-shadow: none;
+    border: none;
+    padding: .5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    width: fit-content;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+p {
+    background-color: red;
+}
+
+:where(button,a):hover {
+    opacity: .85;
+}
+
+.container {
+    margin: 5vmax auto;
+    max-width: 65rem;
+}
