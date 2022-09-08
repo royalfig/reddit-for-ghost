@@ -85,8 +85,8 @@ export async function convertToGhostExport() {
           upvote_ratio,
           permalink,
           created_utc,
-          post_hint,
-          media,
+          // post_hint,
+          // media,
         },
       } = current;
 
@@ -122,7 +122,7 @@ export async function convertToGhostExport() {
   );
 
   let id = 0;
-  
+
   const uniqueTags = tags.reduce<any[]>((p, c) => {
     console.log(p, c);
     if (!p.length) {
