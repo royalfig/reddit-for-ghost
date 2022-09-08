@@ -124,7 +124,6 @@ export async function convertToGhostExport() {
   let id = 0;
 
   const uniqueTags = tags.reduce<any[]>((p, c) => {
-    console.log(p, c);
     if (!p.length) {
       p.push({ id: id++, name: c });
       return p;
@@ -145,8 +144,6 @@ export async function convertToGhostExport() {
 
     return { tag_id: id, post_id: post.id };
   });
-
-  console.log(postAndTags);
 
   const posts = {
     meta: { exported_on: Date.now(), version: "5.0.0" },
