@@ -106,7 +106,7 @@ export async function convertToGhostExport() {
 
       const post = {
         id: idx,
-        title: title.substring(0, 191),
+        title: title.substring(0, 190),
         feature_image: isFeatureImage(url),
         mobiledoc: content,
         tags: [subreddit],
